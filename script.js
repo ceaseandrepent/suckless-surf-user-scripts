@@ -1,4 +1,4 @@
-var CUSTOM_CSS = "<style type='text/css'>* { background-color: #073642 !important; color: #839496 !important; } body { width: 75%; margin-left: auto; margin-right: auto; } code { text-align: left; } </style>";
+var CUSTOM_CSS = "<style type='text/css'>* { background-color: #073642 !important; color: #839496 !important; } body { width: 75%; margin-left: auto; margin-right: auto; text-align: justify; } code { text-align: left; } </style>";
 
 document.addEventListener('DOMContentLoaded', function () {
 	if (location.href.split('/')[2] == 'www.vedomosti.ru') {
