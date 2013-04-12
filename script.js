@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 document.addEventListener('DOMContentLoaded', function () {
-	if (location.href.split('/')[2] == 'habrahabr.ru') {
+	var urlParts = location.href.split('/');
+	if (urlParts[2] == 'habrahabr.ru' && urlParts[3] == 'post') {
 		var content = $('div.content_left').html();
 		var body = document.getElementsByTagName('body')[0];
 		body.innerHTML = '';
