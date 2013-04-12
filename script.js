@@ -29,3 +29,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		body.innerHTML += CUSTOM_CSS;
 	}
 }, false);
+
+document.addEventListener('DOMContentLoaded', function () {
+	var urlParts = location.href.split('/');
+	if (urlParts[2] == 'mail.yandex.ru' && urlParts[3] == 'neo2') {
+		$('div.b-banner').remove();
+	}
+}, false);
+
+document.addEventListener('DOMContentLoaded', function () {
+	var urlParts = location.href.split('/');
+	if (urlParts[2] == 'e.mail.ru' && urlParts[3] == 'cgi-bin') {
+		$('div.rb_banner').remove();
+	}
+}, false);
